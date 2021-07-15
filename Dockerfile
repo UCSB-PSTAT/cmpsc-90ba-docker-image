@@ -58,7 +58,7 @@ RUN pip install PTable && \
     pip install pytest-custom-report
 
 # Install otter-grader
-RUN pip install otter-grader==2.1.1
+RUN pip install otter-grader==2.2.4
 
 RUN jupyter lab build && \
     fix-permissions $CONDA_DIR && \
