@@ -35,6 +35,7 @@ RUN \
         otter-grader==2.2.5 \
         ipywebrtc \
         ipympl \
+        ipywidgets \
         matplotlib \
         jupyter_bokeh \
         nbdime \
