@@ -42,7 +42,7 @@ RUN \
         jupyterlab_vim \
         ipympl \
         jupyter \
-        jupyterlab \
+        jupyterlab && \
     \
     rm -rf ~/.cache/pip ~/.cache/matplotlib ~/.cache/yarn && \
     fix-permissions $CONDA_DIR && \
