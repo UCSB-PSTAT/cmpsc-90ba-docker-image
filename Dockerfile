@@ -41,6 +41,7 @@ RUN \
         nbdime \
         jupytext --upgrade \
         jupyterlab_vim \
+        jupyterlab_widgets \
         ipympl \
         jupyter \
         jupyterlab && \
