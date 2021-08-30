@@ -22,7 +22,7 @@ jobs:
         with:
           # list of Docker images to use as base name for tags
           images: |
-            ucsb/econ-145
+            ucsb/cmpsc-90ba
           tags: |
             type=schedule
             type=ref,event=branch
