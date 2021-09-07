@@ -2,6 +2,8 @@ ARG BASE_IMAGE=dddlab/base-scipy:v20200228-18f2534-94fdd01b492f
 FROM $BASE_IMAGE
 LABEL maintainer="Sang-Yun Oh <syoh@ucsb.edu>"
 USER root
+ENV NODE_PATH=/opt/conda/lib/node_modules
+ARG NODE_PATH=/opt/conda/lib/node_modules
 RUN apt-get update && \
     apt-get install -y \
         libxtst-dev \
@@ -82,6 +84,7 @@ RUN \
 RUN \
     #conda update -n base conda && \
     npm install -g npm@latest && \
+    npm install --prefix /opt/conda codemirror && \
     #conda update jupyterlab -y && \
     jupyter nbextension enable table_beautifier/main --sys-prefix && \
     jupyter nbextension enable toggle_all_line_numbers/main --sys-prefix 
