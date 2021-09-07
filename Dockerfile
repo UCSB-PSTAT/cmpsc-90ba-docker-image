@@ -11,7 +11,8 @@ RUN apt-get update && \
         powerline \
         fonts-powerline \
         less \
-        bsdmainutils
+        bsdmainutils \
+        pv
 USER $NB_USER
  
 RUN \
