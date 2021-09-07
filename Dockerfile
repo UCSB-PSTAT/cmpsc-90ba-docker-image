@@ -2,8 +2,6 @@ ARG BASE_IMAGE=dddlab/base-scipy:v20200228-18f2534-94fdd01b492f
 FROM $BASE_IMAGE
 LABEL maintainer="Sang-Yun Oh <syoh@ucsb.edu>"
 USER root
-ENV NODE_PATH=/opt/conda/lib/node_modules
-ARG NODE_PATH=/opt/conda/lib/node_modules
 RUN apt-get update && \
     apt-get install -y \
         libxtst-dev \
