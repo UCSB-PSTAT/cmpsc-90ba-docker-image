@@ -83,7 +83,7 @@ RUN \
 RUN \
     #conda update -n base conda && \
     npm install -g npm@latest && \
-    npm install --prefix /opt/conda codemirror && \
+    npm install -g codemirror && \
     #conda update jupyterlab -y && \
     jupyter nbextension enable table_beautifier/main --sys-prefix && \
     jupyter nbextension enable toggle_all_line_numbers/main --sys-prefix 
